@@ -1,0 +1,21 @@
+mv com.adobe.lrmobile /mnt/windows-raid/dataset_320_google_play/
+mv com.miniclip.footballstrike /mnt/windows-raid/dataset_320_google_play/
+mv com.offline.bible /mnt/windows-raid/dataset_320_google_play/
+mv com.os.airforce /mnt/windows-raid/dataset_320_google_play/
+mv com.digidust.elokence.akinator.freemium /mnt/windows-raid/dataset_320_google_play/
+mv com.openai.chatgpt /mnt/windows-raid/dataset_320_google_play/
+mv com.mind.quiz.brain.out /mnt/windows-raid/dataset_320_google_play/
+
+
+#adb shell am start -a android.intent.action.VIEW -d https://play.google.com/store/apps/details?id=com.miniclip.footballstrike
+#adb shell am start -a android.intent.action.VIEW -d https://play.google.com/store/apps/details?id=com.os.airforce
+
+to study
+adb shell am start -a android.intent.action.VIEW -d https://play.google.com/store/apps/details?id=com.adobe.lrmobile
+adb shell am start -a android.intent.action.VIEW -d https://play.google.com/store/apps/details?id=com.offline.bible
+adb shell am start -a android.intent.action.VIEW -d https://play.google.com/store/apps/details?id=com.digidust.elokence.akinator.freemium
+adb shell am start -a android.intent.action.VIEW -d https://play.google.com/store/apps/details?id=com.openai.chatgpt
+adb shell am start -a android.intent.action.VIEW -d https://play.google.com/store/apps/details?id=com.mind.quiz.brain.out
+
+
+mv com.adobe.lrmobile

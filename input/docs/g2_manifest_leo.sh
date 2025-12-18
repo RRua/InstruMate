@@ -1,0 +1,1 @@
+./venv/bin/python start.py -m instrumate -AS /home/leandro/storage/dataset-final-re -o /home/leandro/storage/g2-manifest-v2 -tmp_dir /mnt/tmp0/temp-instrumate/ -static_analyzers basic -variant_specs manifest --force

@@ -1,0 +1,1 @@
+./venv/bin/python start.py -m instrumate -AS /mnt/windows-raid/baseline-re-healthy-compatible-g1 -o /mnt/windows-raid/dataset_g4_acvtool_updated -tmp_dir /mnt/windows-raid/temp_dir_acvtoolu -static_analyzers basic -variant_specs instrumentation,acvtool --force

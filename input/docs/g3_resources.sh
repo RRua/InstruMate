@@ -1,0 +1,1 @@
+./venv/bin/python start.py -m instrumate -AS /mnt/windows-raid/dataset-baseline/ -o /mnt/windows-raid/dataset_g3_resources -tmp_dir /mnt/windows-raid/temp_dir -static_analyzers basic -variant_specs resources --force

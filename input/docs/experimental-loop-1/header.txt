@@ -1,0 +1,1 @@
+pkg_id,app_name,category,installs,total_ratings,avg_rating,app_price_type,growth_30_days,growth_60_days

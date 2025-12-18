@@ -1,0 +1,3 @@
+com.coloros.weather2
+com.gallery20
+com.naturalmotion.customstreetracer2

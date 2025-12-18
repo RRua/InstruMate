@@ -1,0 +1,1 @@
+./venv/bin/python start.py -m instrumate -AS /home/leandro/storage/baseline-re-healthy-compatible-g1 -o /home/leandro/storage/baseline-g4-aspecjapktool -tmp_dir /mnt/tmp0/temp-instrumate/ -static_analyzers basic -variant_specs instrumentation,aspectj --force

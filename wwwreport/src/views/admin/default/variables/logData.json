@@ -1,0 +1,206 @@
+[
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	,
+	{
+		"count": 635,
+		"signature": "android.database.sqlite.SQLiteDatabase.execSQL(java.lang.String,java.lang.Object[])",
+		"argumentValues": {
+			"arg_0": "CREATE TABLE IF NOT EXISTS intervals (\n                  seq_num INTEGER PRIMARY KEY AUTOINCREMENT,\n                  start_walltime INTEGER NOT NULL,\n                  start_uptime INTEGER NOT NULL,\n                  start_event INTEGER NOT NULL,\n                  end_walltime INTEGER NULL,\n                  end_uptime INTEGER NULL,\n                  end_event INTEGER NULL); ",
+			"arg_1": ""
+		},
+		"returnedVal": {
+			"callResult": "true"
+		}
+	}
+	
+]

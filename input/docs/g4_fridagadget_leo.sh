@@ -1,0 +1,1 @@
+./venv/bin/python start.py -m instrumate -AS /home/leandro/storage/dataset-final-re-mini -o /mnt/tmp0/frida-testing -tmp_dir /mnt/tmp0/temp-instrumate/ -static_analyzers basic -variant_specs instrumentation,fridagadget --force --debug

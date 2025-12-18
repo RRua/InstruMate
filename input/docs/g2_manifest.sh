@@ -1,0 +1,1 @@
+./venv/bin/python start.py -m instrumate -AS /mnt/windows-raid/dataset-baseline/ -o /mnt/windows-raid/dataset_g2_manifest -tmp_dir /mnt/windows-raid/temp_dir -static_analyzers basic -variant_specs manifest --force

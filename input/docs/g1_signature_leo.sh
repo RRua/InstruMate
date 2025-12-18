@@ -1,0 +1,1 @@
+./venv/bin/python start.py -m instrumate -AS /home/leandro/storage/dataset-final -o /home/leandro/storage/dataset_g1_signature -tmp_dir /mnt/tmp0/temp-instrumate/ -static_analyzers basic,content+ -variant_specs signature --force

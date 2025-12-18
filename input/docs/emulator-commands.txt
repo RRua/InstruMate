@@ -1,0 +1,6 @@
+adb emu avd snapshot save configured
+adb emu avd snapshot load configured
+
+https://www.androidrank.org/android-most-popular-google-play-apps?start=1&sort=0&price=free&category=all
+
+adb shell am start -a android.intent.action.VIEW -d https://play.google.com/store/apps/details?id=com.whatsapp
