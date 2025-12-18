@@ -1,4 +1,4 @@
-# forensicmate-static-analysis
+# InstruMate
 ForensicMate - Static Analysis Module
 
 
