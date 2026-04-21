@@ -22,7 +22,7 @@ from pymate.classification.models import (
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_OLLAMA_URL = "REMOVED_SECRET_URL"
+DEFAULT_OLLAMA_URL = ""
 DEFAULT_MODEL = "mistral"
 GENERATION_TIMEOUT = 120.0  # seconds
 
@@ -226,6 +226,7 @@ class LLMClassifier:
         self,
         ollama_url: Optional[str] = None,
         model: Optional[str] = None,
+        bearer_token: Optional[str] = None,
     ):
         self.ollama_url = (
             ollama_url
@@ -235,11 +236,25 @@ class LLMClassifier:
             model
             or os.environ.get("OLLAMA_MODEL", DEFAULT_MODEL)
         )
+        token = (
+            bearer_token
+            if bearer_token is not None
+            else os.environ.get("OLLAMA_BEARER_TOKEN", "")
+        )
+        self._headers = (
+            {"Authorization": f"Bearer {token}"} if token else {}
+        )
 
     def is_available(self) -> bool:
         """Check if Ollama is reachable."""
+        if not self.ollama_url:
+            return False
         try:
-            resp = httpx.get(f"{self.ollama_url}/api/tags", timeout=5.0)
+            resp = httpx.get(
+                f"{self.ollama_url}/api/tags",
+                headers=self._headers,
+                timeout=5.0,
+            )
             return resp.status_code == 200
         except (httpx.ConnectError, httpx.TimeoutException, Exception):
             return False
@@ -255,9 +270,17 @@ class LLMClassifier:
         """
         prompt = _build_prompt(metrics)
 
+        if not self.ollama_url:
+            logger.warning("OLLAMA_URL not configured — returning safe defaults")
+            return ClassificationResult(
+                reasoning="OLLAMA_URL not configured",
+                model_used=self.model,
+            )
+
         try:
             resp = httpx.post(
                 f"{self.ollama_url}/api/generate",
+                headers=self._headers,
                 json={
                     "model": self.model,
                     "prompt": prompt,

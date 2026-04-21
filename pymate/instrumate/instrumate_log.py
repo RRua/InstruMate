@@ -99,3 +99,10 @@ class InstruMateLog:
         self.sqlite_csv_logger.close()
         self.sqlite_csv_logger.consolidate_database()
         self.sqlite_csv_logger.exec_post_create(sql_file=self.sql_post_config_file)
+        # Reset singleton so the next InstruMate run gets a fresh logger with
+        # re-opened CSV files, instead of reusing these now-closed ones.
+        type(self)._instance = None
+        try:
+            del self.initialized
+        except AttributeError:
+            pass
