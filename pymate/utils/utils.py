@@ -7,7 +7,6 @@ import subprocess
 import hashlib
 import random
 import string
-from com.dtmilano.android.viewclient import View, ViewClient
 
 
 def is_windows():

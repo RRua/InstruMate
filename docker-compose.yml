@@ -1,0 +1,29 @@
+services:
+  instrumate:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - instrumate-data:/data
+      - ./input:/app/input:ro
+    environment:
+      - INSTRUMATE_OUTPUT_DIR=/data/output
+      - INSTRUMATE_TMP_DIR=/data/tmp
+      - INSTRUMATE_UPLOAD_DIR=/data/uploads
+      - INSTRUMATE_TOOLS_DIR=/opt/tools
+      - INSTRUMATE_INPUT_DIR=/app/input
+      - JAVA_HOME=/opt/java-17
+      - JDK8_HOME=/opt/java-8
+      - WORKERS=2
+      - LOG_LEVEL=info
+      - OLLAMA_URL=REMOVED_SECRET_URL
+      - OLLAMA_MODEL=mistral
+      - VT_API_KEY=REMOVED_SECRET
+      - INSTRUMATE_API_KEY=
+      - MAX_UPLOAD_SIZE=209715200
+    restart: unless-stopped
+
+volumes:
+  instrumate-data:

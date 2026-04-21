@@ -1,0 +1,10 @@
+{
+  "security_risk_level": "low",
+  "malware_likelihood": "benign",
+  "confidence": 0.0,
+  "risk_factors": [],
+  "recommendations": [],
+  "reasoning": "Ollama service unavailable — using safe defaults",
+  "model_used": "mistral",
+  "metrics_summary": null
+}

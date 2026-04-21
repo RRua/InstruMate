@@ -1,0 +1,3 @@
+app_id,package_name,original,features_flag,features_str,level_flag,levels_str,maker_tag,apk_file,apk_size
+69ba5ae069d3ebbed53f481cb69daf44,com.sanad.gemini_2_dot_5_pro_preview.scientificcalculator,True,,,,,,./output/com.sanad.gemini_2_dot_5_pro_preview.scientificcalculator/com.sanad.gemini_2_dot_5_pro_preview.scientificcalculator-1_original/installers/app-debug.apk,5445150
+7d3643aa60b6246278871fbfd9459645,com.sanad.gemini_2_dot_5_pro_preview.game2048,True,,,,,,./output/com.sanad.gemini_2_dot_5_pro_preview.game2048/com.sanad.gemini_2_dot_5_pro_preview.game2048-1_original/installers/app-debug.apk,5444695

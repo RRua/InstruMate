@@ -1,0 +1,9 @@
+app_id,package_name,original,features_flag,features_str,level_flag,levels_str,maker_tag,event_type,prefix,action,cmd
+69ba5ae069d3ebbed53f481cb69daf44,com.sanad.gemini_2_dot_5_pro_preview.scientificcalculator,True,,,,,,intent,broadcast,androidx.profileinstaller.action.INSTALL_PROFILE,am broadcast -a androidx.profileinstaller.action.INSTALL_PROFILE
+69ba5ae069d3ebbed53f481cb69daf44,com.sanad.gemini_2_dot_5_pro_preview.scientificcalculator,True,,,,,,intent,broadcast,androidx.profileinstaller.action.SKIP_FILE,am broadcast -a androidx.profileinstaller.action.SKIP_FILE
+69ba5ae069d3ebbed53f481cb69daf44,com.sanad.gemini_2_dot_5_pro_preview.scientificcalculator,True,,,,,,intent,broadcast,androidx.profileinstaller.action.SAVE_PROFILE,am broadcast -a androidx.profileinstaller.action.SAVE_PROFILE
+69ba5ae069d3ebbed53f481cb69daf44,com.sanad.gemini_2_dot_5_pro_preview.scientificcalculator,True,,,,,,intent,broadcast,androidx.profileinstaller.action.BENCHMARK_OPERATION,am broadcast -a androidx.profileinstaller.action.BENCHMARK_OPERATION
+7d3643aa60b6246278871fbfd9459645,com.sanad.gemini_2_dot_5_pro_preview.game2048,True,,,,,,intent,broadcast,androidx.profileinstaller.action.INSTALL_PROFILE,am broadcast -a androidx.profileinstaller.action.INSTALL_PROFILE
+7d3643aa60b6246278871fbfd9459645,com.sanad.gemini_2_dot_5_pro_preview.game2048,True,,,,,,intent,broadcast,androidx.profileinstaller.action.SKIP_FILE,am broadcast -a androidx.profileinstaller.action.SKIP_FILE
+7d3643aa60b6246278871fbfd9459645,com.sanad.gemini_2_dot_5_pro_preview.game2048,True,,,,,,intent,broadcast,androidx.profileinstaller.action.SAVE_PROFILE,am broadcast -a androidx.profileinstaller.action.SAVE_PROFILE
+7d3643aa60b6246278871fbfd9459645,com.sanad.gemini_2_dot_5_pro_preview.game2048,True,,,,,,intent,broadcast,androidx.profileinstaller.action.BENCHMARK_OPERATION,am broadcast -a androidx.profileinstaller.action.BENCHMARK_OPERATION

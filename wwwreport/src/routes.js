@@ -2,31 +2,37 @@ import React from "react";
 
 import { Icon } from "@chakra-ui/react";
 import {
-  MdBarChart,
-  MdPerson,
-  MdHome,
-  MdLock,
-  MdOutlineShoppingCart,
+  MdCloudUpload,
+  MdApps,
+  MdShield,
 } from "react-icons/md";
 
-// Admin Imports
-import MainDashboard from "views/admin/default";
-import Graph from "views/admin/graph";
+// Views
+import Upload from "views/admin/upload";
+import AppsList from "views/admin/apps";
+import VirusTotalHub from "views/admin/virustotal";
 
 const routes = [
   {
-    name: "Project",
+    name: "Upload APK",
     layout: "/admin",
-    path: "/default",
-    icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
-    component: MainDashboard,
+    path: "/upload",
+    icon: <Icon as={MdCloudUpload} width='20px' height='20px' color='inherit' />,
+    component: Upload,
   },
   {
-    name: "Graph",
+    name: "Apps",
     layout: "/admin",
-    path: "/graph",
-    icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
-    component: Graph,
+    path: "/apps",
+    icon: <Icon as={MdApps} width='20px' height='20px' color='inherit' />,
+    component: AppsList,
+  },
+  {
+    name: "VirusTotal",
+    layout: "/admin",
+    path: "/virustotal",
+    icon: <Icon as={MdShield} width='20px' height='20px' color='inherit' />,
+    component: VirusTotalHub,
   },
 ];
 

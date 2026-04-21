@@ -14,7 +14,7 @@ export function SidebarBrand() {
   return (
     <Flex align='center' direction='column'>
       <Text mb='5px' me='24px'>
-                Forensic Mate
+                InstruMate
       </Text>
       <HSeparator mb='20px' />
     </Flex>

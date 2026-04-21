@@ -1,0 +1,1 @@
+variant_maker,variant_maker_tag,tool_name,tool_description,input_app,package_name,app_version,app_id,variant_flag,variant_flag_str,level_flag,level_flag_str,tool_success,tool_cmd_stdout,tool_cmd_stderr,tool_script_stdout,tool_script_stderr,tool_traceback_exception,tool_total_secs,tool_options

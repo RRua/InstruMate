@@ -40,10 +40,10 @@ export default function Footer() {
           <Link
             mx='3px'
             color={textColor}
-            href='https://github.com/leosol/forensic-mate'
+            href='#'
             target='_blank'
             fontWeight='700'>
-            Forensic Mate
+            InstruMate
           </Link>
         </Text>
       </Text>

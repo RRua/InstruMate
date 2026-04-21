@@ -1,5 +1,5 @@
 // Chakra imports
-import { Portal, Box, useDisclosure, Text, Button, Link } from '@chakra-ui/react';
+import { Portal, Box, useDisclosure } from '@chakra-ui/react';
 import Footer from 'components/footer/FooterAdmin.js';
 // Layout components
 import Navbar from 'components/navbar/NavbarAdmin.js';
@@ -8,6 +8,8 @@ import { SidebarContext } from 'contexts/SidebarContext';
 import React, { useState } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import routes from 'routes.js';
+import AppDetail from 'views/admin/apps/AppDetail';
+import CallGraphView from 'views/admin/graph/index';
 
 // Custom Chakra theme
 export default function Dashboard(props) {
@@ -20,7 +22,7 @@ export default function Dashboard(props) {
 		return window.location.pathname !== '/admin/full-screen-maps';
 	};
 	const getActiveRoute = (routes) => {
-		let activeRoute = 'Default Brand Text';
+		let activeRoute = 'InstruMate';
 		for (let i = 0; i < routes.length; i++) {
 			if (routes[i].collapse) {
 				let collapseActiveRoute = getActiveRoute(routes[i].items);
@@ -37,6 +39,13 @@ export default function Dashboard(props) {
 					return routes[i].name;
 				}
 			}
+		}
+		// Check for app detail route
+		if (window.location.href.indexOf('/admin/graph/') !== -1) {
+			return 'Call Graph';
+		}
+		if (window.location.href.indexOf('/admin/apps/') !== -1) {
+			return 'App Detail';
 		}
 		return activeRoute;
 	};
@@ -85,7 +94,7 @@ export default function Dashboard(props) {
 	const getRoutes = (routes) => {
 		return routes.map((prop, key) => {
 			if (prop.layout === '/admin') {
-				return <Route path={prop.layout + prop.path} component={prop.component} key={key} />;
+				return <Route exact path={prop.layout + prop.path} component={prop.component} key={key} />;
 			}
 			if (prop.collapse) {
 				return getRoutes(prop.items);
@@ -99,7 +108,6 @@ export default function Dashboard(props) {
 	};
 	document.documentElement.dir = 'ltr';
 	const { onOpen } = useDisclosure();
-	document.documentElement.dir = 'ltr';
 	return (
 		<Box>
 			<Box>
@@ -126,7 +134,7 @@ export default function Dashboard(props) {
 							<Box>
 								<Navbar
 									onOpen={onOpen}
-									logoText={'Forensic Mate'}
+									logoText={'InstruMate'}
 									brandText={getActiveRoute(routes)}
 									secondary={getActiveNavbar(routes)}
 									message={getActiveNavbarText(routes)}
@@ -140,7 +148,9 @@ export default function Dashboard(props) {
 							<Box mx='auto' p={{ base: '20px', md: '30px' }} pe='20px' minH='100vh' pt='50px'>
 								<Switch>
 									{getRoutes(routes)}
-									<Redirect from='/' to='/admin/default' />
+									<Route path='/admin/graph/:appId' component={CallGraphView} />
+									<Route path='/admin/apps/:appId' component={AppDetail} />
+									<Redirect from='/' to='/admin/upload' />
 								</Switch>
 							</Box>
 						) : null}

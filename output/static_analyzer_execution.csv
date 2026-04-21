@@ -1,0 +1,11 @@
+static_analyzer_name,package_name,base_pkg,app_id,app_version,variant_flag,variant_flag_str,level_flag,level_flag_str,success,tb_exception,total_secs
+Androguard Static Analyzer,com.sanad.gemini_2_dot_5_pro_preview.scientificcalculator,./data/uploads/390f44de-aeb8-4111-bac0-456742f3ee43/app-debug.apk,69ba5ae069d3ebbed53f481cb69daf44,1.0,0,original,0,original,True,,0.109028
+Androguard Static Call Graph Analyzer,com.sanad.gemini_2_dot_5_pro_preview.scientificcalculator,./data/uploads/390f44de-aeb8-4111-bac0-456742f3ee43/app-debug.apk,69ba5ae069d3ebbed53f481cb69daf44,1.0,0,original,0,original,True,,7.488278
+Androguard DEX Analyzer,com.sanad.gemini_2_dot_5_pro_preview.scientificcalculator,./data/uploads/390f44de-aeb8-4111-bac0-456742f3ee43/app-debug.apk,69ba5ae069d3ebbed53f481cb69daf44,1.0,0,original,0,original,True,,14.536838
+Androguard DEX Analyzer,com.sanad.gemini_2_dot_5_pro_preview.scientificcalculator,./data/uploads/390f44de-aeb8-4111-bac0-456742f3ee43/app-debug.apk,69ba5ae069d3ebbed53f481cb69daf44,1.0,0,original,0,original,True,,1.064452
+Possible Modifications Analyzer,com.sanad.gemini_2_dot_5_pro_preview.scientificcalculator,./data/uploads/390f44de-aeb8-4111-bac0-456742f3ee43/app-debug.apk,69ba5ae069d3ebbed53f481cb69daf44,1.0,0,original,0,original,True,,0.052718
+Androguard Static Analyzer,com.sanad.gemini_2_dot_5_pro_preview.game2048,./data/uploads/e1a40afc-996b-411c-975a-1883873269c9/app-debug.apk,7d3643aa60b6246278871fbfd9459645,1.0,0,original,0,original,True,,0.114176
+Androguard Static Call Graph Analyzer,com.sanad.gemini_2_dot_5_pro_preview.game2048,./data/uploads/e1a40afc-996b-411c-975a-1883873269c9/app-debug.apk,7d3643aa60b6246278871fbfd9459645,1.0,0,original,0,original,True,,7.453274
+Androguard DEX Analyzer,com.sanad.gemini_2_dot_5_pro_preview.game2048,./data/uploads/e1a40afc-996b-411c-975a-1883873269c9/app-debug.apk,7d3643aa60b6246278871fbfd9459645,1.0,0,original,0,original,True,,14.176774
+Androguard DEX Analyzer,com.sanad.gemini_2_dot_5_pro_preview.game2048,./data/uploads/e1a40afc-996b-411c-975a-1883873269c9/app-debug.apk,7d3643aa60b6246278871fbfd9459645,1.0,0,original,0,original,True,,0.280383
+Possible Modifications Analyzer,com.sanad.gemini_2_dot_5_pro_preview.game2048,./data/uploads/e1a40afc-996b-411c-975a-1883873269c9/app-debug.apk,7d3643aa60b6246278871fbfd9459645,1.0,0,original,0,original,True,,0.021406

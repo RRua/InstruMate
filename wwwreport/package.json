@@ -1,6 +1,7 @@
 {
   "homepage": ".",
-  "name": "forensic-mate",
+  "name": "instrumate",
+  "proxy": "http://localhost:8000",
   "version": "1.0.1",
   "private": true,
   "dependencies": {
@@ -15,6 +16,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "ajv": "^8.18.0",
     "apexcharts": "3.35.2",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
@@ -47,8 +49,15 @@
     "deploy": "gh-pages -d build",
     "sitemap": "babel-node ./sitemap-builder.js"
   },
-  "resolutions": {
+  "overrides": {
+    "chokidar": "^3.6.0",
+    "fsevents": "^2.3.3",
     "react-error-overlay": "6.0.9"
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9",
+    "chokidar": "^3.6.0",
+    "fsevents": "^2.3.3"
   },
   "eslintConfig": {
     "extends": [

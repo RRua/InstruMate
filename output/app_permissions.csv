@@ -1,0 +1,3 @@
+app_id,package_name,original,features_flag,features_str,level_flag,levels_str,maker_tag,permission_name
+69ba5ae069d3ebbed53f481cb69daf44,com.sanad.gemini_2_dot_5_pro_preview.scientificcalculator,True,,,,,,com.sanad.gemini_2_dot_5_pro_preview.scientificcalculator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+7d3643aa60b6246278871fbfd9459645,com.sanad.gemini_2_dot_5_pro_preview.game2048,True,,,,,,com.sanad.gemini_2_dot_5_pro_preview.game2048.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION

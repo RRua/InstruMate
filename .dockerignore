@@ -1,0 +1,17 @@
+.git
+.claude
+__pycache__
+*.pyc
+*.pyo
+output/
+tmp/
+*.db
+node_modules
+wwwreport/node_modules
+wwwreport/build
+.vscode
+.idea
+*.pdf
+venv/
+.env
+data/
