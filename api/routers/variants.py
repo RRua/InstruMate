@@ -65,13 +65,16 @@ def _run_variant_creation(
                 specs_modify_resources="resources" in spec_levels,
                 specs_modify_behaviour="instrumentation" in spec_levels,
             )
-            instrumate.make_variants()
+            n_variants = instrumate.make_variants() or 0
 
             registry.refresh()
             job_store.update(
                 job_id,
                 status=AnalysisStatus.COMPLETED,
-                message=f"Variants created for {app.get_package_name()}",
+                message=(
+                    f"Produced {n_variants} variant(s) for "
+                    f"{app.get_package_name()}"
+                ),
             )
         except Exception as e:
             logger.exception(f"Variant creation failed for job {job_id}")

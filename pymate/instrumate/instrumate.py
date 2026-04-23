@@ -260,9 +260,11 @@ class InstruMate:
         total_apps = len(okay_original_apps)
         start_time = time.time()
         total_time = 0
+        total_variants = 0
         for app in okay_original_apps:
             call_start_time = time.time()
             variants = self._make_app_variants(base_app=app)
+            total_variants += len(variants)
             call_end_time = time.time()
             call_duration = call_end_time - call_start_time
             total_time = total_time + call_duration
@@ -280,6 +282,7 @@ class InstruMate:
             current_app_index = current_app_index + 1
         self.instrumate_log.close_logs()
         self.logger.info("end")
+        return total_variants
 
 
 def main():

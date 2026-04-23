@@ -29,3 +29,31 @@ def test_health_virustotal_configured_field(test_client):
     data = resp.json()
     assert "virustotal_configured" in data
     assert isinstance(data["virustotal_configured"], bool)
+
+
+def test_health_virustotal_configured_reflects_env(test_client, monkeypatch):
+    monkeypatch.setenv("VT_API_KEY", "some-key")
+    assert test_client.get("/api/health").json()["virustotal_configured"] is True
+    monkeypatch.setenv("VT_API_KEY", "")
+    assert test_client.get("/api/health").json()["virustotal_configured"] is False
+
+
+def test_health_response_shape_matches_schema(test_client):
+    """All HealthResponse fields are present with correct types."""
+    data = test_client.get("/api/health").json()
+    assert isinstance(data["status"], str)
+    assert isinstance(data["java_available"], bool)
+    assert isinstance(data["jdk8_available"], bool)
+    assert isinstance(data["tools_available"], dict)
+    assert isinstance(data["python_version"], str)
+    assert isinstance(data["analyzers_available"], list)
+    assert isinstance(data["variant_makers_available"], list)
+    assert isinstance(data["ollama_available"], bool)
+
+
+def test_health_lists_known_analyzers(test_client):
+    """Core analyzers are always reported as available."""
+    data = test_client.get("/api/health").json()
+    assert "basic" in data["analyzers_available"]
+    assert "callgraph" in data["analyzers_available"]
+    assert "content++" in data["analyzers_available"]

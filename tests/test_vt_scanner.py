@@ -14,7 +14,10 @@ def scanner():
     return VTScanner(api_key="test-key-123")
 
 
-def test_scanner_requires_api_key():
+def test_scanner_requires_api_key(monkeypatch):
+    # The constructor falls back to VT_API_KEY when no key is passed,
+    # so unset it to exercise the empty-credential path.
+    monkeypatch.delenv("VT_API_KEY", raising=False)
     with pytest.raises(ValueError, match="API key"):
         VTScanner(api_key="")
 

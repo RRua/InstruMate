@@ -101,7 +101,10 @@ async def analyze_apk(
     job_id = str(uuid.uuid4())
     upload_dir = os.path.join(UPLOAD_DIR, job_id)
     os.makedirs(upload_dir, exist_ok=True)
-    apk_path = os.path.join(upload_dir, file.filename)
+    # Save under a normalized "base.apk" name so the variants pipeline's
+    # App.load_from_dir (which requires \bbase\b in the installer filename)
+    # can find this APK later.
+    apk_path = os.path.join(upload_dir, "base.apk")
 
     # Stream upload in chunks with size limit
     total_size = 0
